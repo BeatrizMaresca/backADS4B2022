@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Meu primeiro site :D</title>
+        <meta charset="utf-8" />
+        <!-- <link href="template.css" rel="stylesheet" media="all" /> -->
+    </head>
+    <body>
+        <div class="formulario">
+            <form name = "meu_form"; method="get">
+                <h1>Alunos que passaram na matéria</h1>
+                <p>Aprovado ou Reprovado</p>
+                Primeira Nota:
+                <input type="text" name="primeira" style="margin-bottom: 20px; margin-left: 20px; color: #EC94DF;" >
+                <br>
+                Segunda Nota:
+                <input type="text" name="segunda">
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+        {% if resultado %}
+        <div>
+            {{resultado}} com média {{media}}!!!
+        </div>
+        {% endif %}
+
+    </body>
+</html>
